@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUSTOMER SURVEY FORM</title>
+    <style>
+        body {
+            background-color: burlywood;
+            font-family: Verdana;
+            text-align: center;
+        }
+
+        form {
+            background-color: #fff;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: yellowgreen;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+ 
+    </style>
+</head>
+
+<body>
+
+    <form id="form" name="RegForm" onsubmit="return ASSESMENT()"
+    method="post">
+        <div class="form-control">
+        <p>
+            <label for="First Name" id="label-First Name">
+
+            First Name 
+        </label>
+            <input type="text" size="25" name="First Name">
+       
+        </p>
+        </div>
+       
+        <div class="form-control">
+            <p>
+                <label for="Last Name" id="label-Last Name">
+                Last Name 
+                </label>
+                <input type="text" size="25" name="Last Name">
+               
+            </p>
+        </div>
+       
+        <div class="form-control">
+        <p>
+            <label for=" Date of Birth" id="label- Date of Birth">
+            Date of Birth
+        </label>
+            
+            <input type="date" size="15" name="Date of Birth">
+        </div>
+        </p>
+        </div>
+        <div class="form-control">
+
+            <p>
+
+                <label for="Country" id="label-Country"> Country </label>
+                <select name="Country" >
+                    <option value="" disabled selected>Select your options</option>
+                    <option value="India">India</option>
+                </select>
+            </p>
+        </div>
+        <div class="form-control">
+
+            <p>
+                <label for="Gender" id="label-Gender"> 
+                    Gender 
+
+                </label>
+                 
+               
+
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+
+            </p>
+        </div>
+        <div class="form-control">
+            <p>
+                <label for=" Profession" id="label-Profession"> 
+                    Profession
+
+                </label>
+
+                <input type="text" name="Profession" size="25">
+            </p>
+        </div>
+        <div class="form-control">
+            <p>
+                <label for="email" id="label-email">Enter your email </label>
+                <input type="email" id="email" name="email" size="25">
+            </p>
+        </div>
+        <div class="form-control">
+            <p>
+                <label for="  Mobile Number" id="label- Mobile Number"> 
+                    Mobile Number
+
+                </label>
+                <input type="number" name="Mobile Number">
+            </p>
+        </div>
+        <div class="form-control">
+
+            <p>
+                <button>
+                
+                <input type="submit" name="submit" value="submit">
+                <input type="reset" name="reset" value="reset">
+            </button>
+            </p>
+        </div>
+
+    </form>
+</body>
+
+</html>
